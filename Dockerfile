@@ -2,7 +2,7 @@
 
 
 FROM phusion/baseimage:latest
-MAINTAINER Sergey Arkhipov <nineseconds@yandex.ru>
+MAINTAINER Zhuhao Wang <zhuhaow@gmail.com>
 
 # Environment variables
 ENV HOME /root
@@ -21,8 +21,8 @@ RUN echo "/root" > /etc/container_environment/HOME && \
 RUN apt-get -qq update && \
     apt-get -qq install -y --no-install-recommends \
         git \
+        zsh \
         vim \
-        nano \
         curl \
         wget && \
     apt-get clean && \
